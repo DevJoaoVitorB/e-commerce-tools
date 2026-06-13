@@ -1,123 +1,191 @@
-# 🧰 E-commerce Toolkit - Ferramentas para Terminal
+# 🚀 E-commerce Toolkit - Ferramentas para Terminal
 
-Este projeto consiste em um **conjunto de ferramentas para e-commerce executadas diretamente no terminal**, desenvolvido com **JavaScript e Node.js**.
+Aplicação desenvolvida com **JavaScript e Node.js** que reúne ferramentas úteis para ambientes de e-commerce executadas diretamente via terminal. O projeto foi desenvolvido como desafio prático do **Módulo III: Gerenciando Pacotes com NPM do curso de Formação Node.js Fundamentals** da [**DIO.me**](https://www.dio.me/).
 
-A aplicação oferece funcionalidades úteis para o dia a dia, como:
-
-- 🔳 geração de QR Code
-- 🔐 geração de senhas seguras
-
-Tudo isso sendo executado via **linha de comando**, com interação direta com o usuário.
-
-Este projeto foi desenvolvido como **desafio prático** do curso:
-
-> **Formação Node.js Fundamentals – Módulo III: Gerenciando Pacotes com NPM**  
-> Plataforma: [**DIO.me**](https://web.dio.me/)
+### Status do Projeto: ✅ Concluído
 
 <br>
 
-## 🚀 Tecnologias Utilizadas
+## 📋 Sobre o Projeto
 
-![Stack](https://skillicons.dev/icons?i=nodejs,js)
+O **E-commerce Toolkit** é uma aplicação **CLI (Command Line Interface)** criada para fornecer ferramentas reutilizáveis frequentemente utilizadas em sistemas de e-commerce. O projeto oferece geração de QR Codes e criação de senhas seguras, utilizando bibliotecas do ecossistema **NPM** e interação por linha de comando.
 
-Além do Node.js, o projeto utiliza bibliotecas importantes do ecossistema NPM:
+### Objetivo
 
-- `qrcode-terminal` → geração de QR Codes no terminal
-- `chalk` → estilização de textos no terminal
-- `prompt` → entrada de dados do usuário
+Explorar o gerenciamento de dependências com **NPM** e a utilização de bibliotecas externas para construir ferramentas úteis executadas diretamente pelo terminal. Durante o desenvolvimento foram praticados:
 
-<br>
+* Gerenciamento de pacotes com NPM
+* Utilização de bibliotecas externas
+* Modularização de código
+* Separação de responsabilidades
+* Manipulação de strings
+* Geração de dados aleatórios
+* Desenvolvimento de aplicações CLI
+* Configuração via variáveis de ambiente
+* Organização de projetos Node.js
 
-## 🎯 Objetivo do Projeto
+### Problema Resolvido
 
-O objetivo principal é construir ferramentas reutilizáveis para aplicações de e-commerce, explorando o uso de **pacotes NPM** e interação via terminal.
-
-O sistema permite:
-
-- 🔳 gerar QR Codes a partir de textos ou links
-- 🔐 gerar senhas seguras com diferentes combinações de caracteres
-- 🎨 exibir informações estilizadas no terminal
-- ⌨️ interagir com o usuário por meio de prompts
-
-Além disso, o projeto reforça a prática de:
-
-- instalação e gerenciamento de dependências com **NPM**
-- organização de código em módulos
-- criação de ferramentas utilitárias reutilizáveis
+Diversas aplicações precisam gerar QR Codes ou criar senhas seguras para usuários e administradores. Este projeto demonstra como implementar essas funcionalidades de forma modular, reutilizável e acessível através de uma interface de linha de comando.
 
 <br>
 
-## 🧱 Estrutura das Funcionalidades
+## ✨ Funcionalidades
 
-A aplicação foi dividida em funcionalidades independentes, facilitando manutenção e expansão.
+### Funcionalidades Implementadas
 
-### Gerador de QR Code
+* [x] Geração de QR Codes via terminal
+* [x] Geração de senhas seguras
+* [x] Configuração da senha através de variáveis de ambiente
+* [x] Interface interativa via terminal
+* [x] Estilização das mensagens utilizando cores
+* [x] Modularização do código
+* [x] Utilização de bibliotecas externas do NPM
 
-Responsável por gerar QR Codes diretamente no terminal.
+#### 🔳 Gerador de QR Code
 
-**Características:**
+Ferramenta responsável pela geração de QR Codes diretamente no terminal.
 
-- recebe um texto ou URL como entrada
-- gera o QR Code em formato visual no terminal
-- utiliza a biblioteca `qrcode-terminal`
+Características:
 
-<br>
+* Recebe textos ou URLs como entrada
+* Gera QR Code visual no terminal
+* Utiliza a biblioteca `qrcode-terminal`
 
-### Gerador de Senha
+#### 🔐 Gerador de Senhas
 
-Responsável por criar senhas seguras de forma automatizada.
+Ferramenta responsável pela criação automática de senhas seguras.
 
-**Características:**
+Características:
 
-- geração de senhas aleatórias
-- uso de letras maiúsculas, minúsculas, números e caracteres especiais
-- lógica implementada manualmente (sem dependências externas)
+* Senhas aleatórias
+* Letras maiúsculas e minúsculas
+* Números
+* Caracteres especiais
+* Tamanho configurável
 
-<br>
-
-### Interface de Terminal
+#### ⌨️ Interface CLI
 
 Responsável pela interação com o usuário.
 
-**Características:**
+Características:
 
-- leitura de entradas com `prompt`
-- estilização das mensagens com `chalk`
-- exibição de menus e opções no terminal
-
-<br>
-
-## 📚 Conceitos Praticados
-
-Durante o desenvolvimento deste projeto foram aplicados conceitos importantes como:
-
-- gerenciamento de pacotes com **NPM**
-- utilização de bibliotecas externas
-- modularização de código
-- separação de responsabilidades
-- manipulação de strings
-- geração de dados aleatórios
-- interação com usuário via terminal (CLI)
-- boas práticas na organização de projetos Node.js
+* Menus interativos
+* Entrada de dados via terminal
+* Mensagens coloridas e formatadas
+* Navegação simples e intuitiva
 
 <br>
 
-## 🖥️ Execução do Projeto
+## 🛠️ Tecnologias Utilizadas
 
-Para executar o projeto localmente:
+### Back-end
 
-```bash
-# clonar o repositório
-git clone https://github.com/DevJoaoVitorB/e-commerce-tools.git
+![Stack Backend](https://skillicons.dev/icons?i=nodejs,javascript)
 
-# instalar dependências
-npm install
+### Ferramentas
 
-# executar aplicação
-npm run start:dev
+![Tools](https://skillicons.dev/icons?i=vscode,git,github,npm)
+
+### Bibliotecas
+
+* `qrcode-terminal`
+* `chalk`
+* `prompt`
+
+<br>
+
+## 🏗️ Arquitetura do Projeto
+
+O projeto segue uma arquitetura modular baseada em responsabilidades, onde cada funcionalidade possui seu próprio módulo.
+
+Características principais:
+
+* Separação de responsabilidades
+* Modularização com ES Modules
+* Organização por funcionalidades
+* Interface CLI interativa
+* Configuração por variáveis de ambiente
+
+<br>
+
+## 📂 Estrutura de Diretórios
+
+```text
+e-commerce-toolkit/
+│
+├── src/                           # Código-fonte principal da aplicação
+│   │
+│   ├── prompts/                   # Configurações e entradas do usuário
+│   │
+│   ├── services/                  # Regras de negócio
+│   │   ├── qr-code/               # Serviço de geração de QR Codes
+│   │   └── password/              # Serviço de geração de senhas
+│   │
+│   ├── utils/                     # Funções auxiliares
+│   │
+│   └── index.js                   # Ponto de entrada da aplicação
+│
+├── .env-example                   # Exemplo de configuração das variáveis de ambiente
+├── package.json                   # Dependências e scripts
+├── package-lock.json              # Controle de dependências
+├── .gitignore                     # Evitar versionamento de informações específicas do projeto
+└── README.md
 ```
 
-Para configurar a geração de senhas, crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
+<br>
+
+## ⚙️ Pré-requisitos
+
+Antes de iniciar, você precisará ter instalado:
+
+* [Git (recomendado)](https://git-scm.com/install//windows)
+* [Visual Studio Code (recomendado)](https://code.visualstudio.com/)
+* [Node.js (versão 18 ou superior) + NPM](https://nodejs.org/pt-br)
+
+<br>
+
+## 🚀 Como Executar
+
+### 1. Clonar o Repositório
+
+```bash
+git clone https://github.com/DevJoaoVitorB/e-commerce-tools.git
+```
+
+### 2. Entrar na Pasta
+
+```bash
+cd e-commerce-tools
+```
+
+### 3. Instalar Dependências
+
+```bash
+npm install
+```
+
+### 4. Configurar Variáveis de Ambiente
+
+Crie o arquivo `.env` a partir do modelo disponível:
+
+```bash
+cp .env.example .env
+```
+
+No Windows:
+
+```powershell
+copy .env.example .env
+```
+
+ou
+
+```powershell
+Copy-Item .env.example .env
+```
+
+Configure suas credenciais:
 
 ```env
 UPPERCASE_LETTERS=true
@@ -126,3 +194,18 @@ NUMBERS=true
 SPECIAL_CHARACTERS=true
 PASSWORD_LENGTH=8
 ```
+
+### 5. Executar o Projeto
+
+```bash
+npm run start:dev
+```
+
+<br>
+
+## 👨‍💻 Autor
+
+| **DevJoaoVitorB** |
+| ----------------- |
+| ![Foto de Perfil - DevJoaoVitorB](https://avatars.githubusercontent.com/u/182047578?s=100&v=4) |
+| [![GitHub](https://skillicons.dev/icons?i=github)](https://github.com/DevJoaoVitorB) [![Linkedin](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/devjoaovitorb) |
