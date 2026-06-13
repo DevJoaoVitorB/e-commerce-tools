@@ -1,4 +1,4 @@
-# 🚀 E-commerce Toolkit - Ferramentas para Terminal
+# 🧰 E-commerce Toolkit - Ferramentas para Terminal
 
 Aplicação desenvolvida com **JavaScript e Node.js** que reúne ferramentas úteis para ambientes de e-commerce executadas diretamente via terminal. O projeto foi desenvolvido como desafio prático do **Módulo III: Gerenciando Pacotes com NPM do curso de Formação Node.js Fundamentals** da [**DIO.me**](https://www.dio.me/).
 
