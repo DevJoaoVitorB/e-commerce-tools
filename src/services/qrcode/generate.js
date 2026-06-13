@@ -1,11 +1,20 @@
 import chalk from 'chalk';
 import qr from 'qrcode-terminal';
 
-export const generateQRCode = (err, response) => {
-    if (err) throw new Error(err);
+import { QR_CODE_TYPES } from '../../utils/constants.js';
 
-    qr.generate(response.link, { small: response.type === '2' }, (qrcode) => {
-        console.log(chalk.green('QR code generated successfully \n'));
-        console.log(`${qrcode} \n`);
+export async function generateQRCode({ link, type }) {
+    if (!link?.trim()) {
+        throw new Error('A valid link is required.');
+    }
+
+    const isCompactQRCode = type === QR_CODE_TYPES.TERMINAL;
+
+    console.log(chalk.green('\n✔ QR Code generated successfully!\n'));
+
+    qr.generate(link, {
+        small: isCompactQRCode,
     });
-};
+
+    console.log();
+}

@@ -1,9 +1,16 @@
 import prompt from 'prompt';
-import { qrcodePromptSchema } from '../../prompts-schemas/qrcode-prompt-schema.js';
+
+import { qrCodePromptSchema } from '../../prompts/qrcode-prompt-schema.js';
 import { generateQRCode } from './generate.js';
 
-export const createQRCode = async () => {
-    prompt.start();
+export async function createQRCode() {
+    try {
+        prompt.start();
 
-    await prompt.get(qrcodePromptSchema, generateQRCode);
-};
+        const response = await prompt.get(qrCodePromptSchema);
+
+        await generateQRCode(response);
+    } catch (error) {
+        console.error(`❌ Failed to generate QR Code: ${error.message}`);
+    }
+}

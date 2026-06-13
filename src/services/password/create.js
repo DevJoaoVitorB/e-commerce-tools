@@ -1,7 +1,8 @@
 import chalk from 'chalk';
 import { generatePassword } from './generate.js';
 
-export const createPassword = () => {
+export function createPassword() {
     const password = generatePassword();
-    console.log(chalk.green(`Password generated successfully: ${password}`));
-};
+
+    console.log(chalk.green(`✔ Password generated successfully: ${password}`));
+}
